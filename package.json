@@ -1,0 +1,27 @@
+{
+  "name": "mongodb-prisma",
+  "version": "1.0.0",
+  "description": "This project is a personal playground and learning environment for building APIs using:",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAMPAIOAlexandre/MongoDB-Prisma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAMPAIOAlexandre/MongoDB-Prisma/issues"
+  },
+  "homepage": "https://github.com/SAMPAIOAlexandre/MongoDB-Prisma#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1"
+  }
+}
