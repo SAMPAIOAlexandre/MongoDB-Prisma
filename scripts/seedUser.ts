@@ -6,6 +6,7 @@ export async function seedUser(prisma: PrismaClient) {
     { name: "Alex", email: "alex@gmail.com" },
     { name: "Claire", email: "claire@gmail.com" },
     { name: "Jordan", email: "jordan@gmail.com" },
+    // { name: 123, email: "123@gmail.com" }, // just for testing with invalid name
   ];
 
   for (const user of users) {
