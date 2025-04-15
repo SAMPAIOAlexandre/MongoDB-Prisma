@@ -7,7 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma:seed": "npx ts-node prisma/seed.ts",
-    "mongo:dev": "mongod --dbpath /opt/homebrew/var/mongodb --replSet rs0"
+    "mongo:dev": "mongod --dbpath /opt/homebrew/var/mongodb --replSet rs0",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js",
+    "dev": "ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -20,13 +23,20 @@
   },
   "homepage": "https://github.com/SAMPAIOAlexandre/MongoDB-Prisma#readme",
   "dependencies": {
+    "@apollo/server": "^4.12.0",
     "@prisma/client": "^6.6.0",
+    "apollo-server": "^3.13.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "graphql": "^16.10.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/graphql": "^14.2.3",
     "prisma": "^6.6.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
