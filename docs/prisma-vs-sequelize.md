@@ -4,6 +4,8 @@ Prisma s'utilise systématiquement avec typescript, c'est un ORM TypeScript-firs
 
 Sequelize peut-être utilisé avec type script mais à la base il a été concu en javascript ce n’est pas un ORM TypeScript-first, il n’a pas de génération automatique de types comme Prisma
 
+Documentation prisma avec MongoDB : https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/mongodb-typescript-mongodb
+
 ## 🧱 Déclaration d’un modèle
 
 ### Sequelize (JS pur)
