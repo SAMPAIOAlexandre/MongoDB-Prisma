@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prisma:seed": "npx ts-node prisma/seed.ts",
     "mongo:dev": "mongod --dbpath /opt/homebrew/var/mongodb --replSet rs0",
     "compile": "tsc",
@@ -37,7 +37,10 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/graphql": "^14.2.3",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
     "prisma": "^6.6.0",
+    "ts-jest": "^29.3.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

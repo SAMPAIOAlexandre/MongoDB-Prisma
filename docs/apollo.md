@@ -68,5 +68,7 @@ export const resolvers = {
 ```
 
 Les resolver implémentent la logique des queries
+
 Connectent les relations
+
 Dans notre projet s'appuie sur Prisma pour interagir avec MongoDB
