@@ -1,7 +1,5 @@
-import { PrismaClient } from "@prisma/client";
-//import { User, Post } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import * as prismaPkg from "@prisma/client";
+const prisma = new prismaPkg.PrismaClient();
 
 export const resolvers = {
   Query: {
@@ -13,7 +11,7 @@ export const resolvers = {
     },
   },
   User: {
-    posts: (parent) => {
+    posts: (parent: prismaPkg.User) => {
       return prisma.post.findMany({
         where: {
           authorId: parent.id,
@@ -22,7 +20,7 @@ export const resolvers = {
     },
   },
   Post: {
-    author: (parent) => {
+    author: (parent: prismaPkg.Post) => {
       return prisma.user.findUnique({
         where: {
           id: parent.authorId,
